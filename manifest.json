@@ -1,28 +1,27 @@
 {
-    "manifest_version": 3,
-    "name": "Yt-Shorts sound panel",
-    "version": "1.0",
-    "description": "Add HTML element to specific pages",
-    "permissions": ["activeTab"],
-    "content_scripts": [
-      {
-        "matches": ["https://www.youtube.com/shorts/*"],
-        "js": ["content.js"],
-        "run_at": "document_end"
-      }
-    ],
-    "action": {
-      "default_popup": "popup.html",
-      "default_icon": {
-        "16": "icon.png",
-        "48": "icon.png",
-        "128": "icon.png"
-      }
-    },
-    "icons": {
+  "manifest_version": 3,
+  "name": "YT Shorts Volume Slider",
+  "version": "1.0",
+  "description": "Adds a volume slider to YouTube Shorts.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/shorts/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
       "16": "icon.png",
       "48": "icon.png",
       "128": "icon.png"
     }
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
   }
-  
+}

@@ -6,8 +6,8 @@ function createVolumeSlider(whereToInsert) {
   volumeSliderContainer.id = "yt-shorts-volume-slider-container";
   volumeSliderContainer.style.cssText = `
     position: absolute;
-    top: 50px;
-    right: 50px;
+    top: 10px;
+    right: 10px;
     z-index: 9999;
     pointer-events: all;
     background-color: #ffffff;
@@ -33,7 +33,7 @@ function createVolumeSlider(whereToInsert) {
 
   volumeSliderContainer.appendChild(volumeSlider);
   document.body.appendChild(volumeSliderContainer);
-  // whereToInsert.appendChild(volumeSliderContainer);
+  whereToInsert.appendChild(volumeSliderContainer);
 }
 
 // Function to find and insert the volume slider
